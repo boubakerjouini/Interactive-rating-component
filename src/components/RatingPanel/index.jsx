@@ -11,14 +11,18 @@ const RatingPanel = ({ ratingValue, setRetingValue }) => {
 
   return (
     <>
-      <div className="flex flex-row justify-between -mt-12 mb-6">
+      <div className="flex flex-row justify-around -mt-[50px] -ml-1 mb-6 gap-2">
         {rating.map(item => {
-          return <RatingButton item={item} setChoosed={setChoosed} choosed={choosed} />
+          return (
+            <div>
+              <RatingButton item={item} setChoosed={setChoosed} choosed={choosed} />
+            </div>
+          )
         })}
       </div>
       <div className="">
         <button
-          className="bg-orange rounded-full w-full tracking-widest  text-white h-10 font-overpass-semibold hover:text-orange hover:bg-white "
+          className="bg-orange rounded-full w-[340px] mt-2 h-[45px] tracking-widest  text-white  font-overpass-semibold hover:text-orange hover:bg-white  "
           onClick={() => {
             handleRating()
           }}

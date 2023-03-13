@@ -14,14 +14,14 @@ const Panel = () => {
     }
   }, [ratingValue])
   return (
-    <div className=" bg-primary rounded-3xl  w-96 h-[370px] p-8 ">
+    <div className=" bg-primary rounded-3xl  w-[410px] h-[410px] py-[26px] px-[31px] mt-10 ml-4 ">
       {!rating ? (
         <>
           {' '}
           <div className="flex flex-col">
-            <img src={icon} alt="icon" className="bg-secondary-medium-1 rounded-full w-10 h-10 p-3.5" />
+            <img src={icon} alt="icon" className="bg-secondary-medium-1 rounded-full w-12 h-12 p-[15px] mt-1 " />
           </div>
-          <div className="flex flex-col mt-6">
+          <div className="flex flex-col mt-[28px]">
             <Message />
           </div>
           <div className="flex flex-col align-bottom mt-20">

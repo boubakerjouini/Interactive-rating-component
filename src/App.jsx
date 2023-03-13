@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-primary-dark ">
+    <div className="flex flex-col items-center justify-center h-screen bg-primary-dark  ">
       <Panel />
     </div>
   )
